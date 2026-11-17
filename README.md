@@ -1,4 +1,4 @@
-# nia-lesson-videos (private)
+# nia-lesson-videos
 
 A Claude Code plugin with two skills for After Effects lesson videos:
 
@@ -6,13 +6,7 @@ A Claude Code plugin with two skills for After Effects lesson videos:
 - `building-lesson-videos`: the general lesson pipeline. The NIA skill runs every After Effects script through this skill's `scripts/ae_run.ps1`, so the two must stay side by side in `skills/`. This is an unchanged copy of the version from 2026-11-17.
 
 ## Install on another Claude account
-This repository is private. On that computer, sign in to GitHub as the repo owner first:
-
-```
-gh auth login
-```
-
-Then in Claude Code:
+This repository is public for now, so no GitHub sign-in is needed. In Claude Code:
 
 ```
 /plugin marketplace add miebi-dotcom/nia-lesson-videos
@@ -24,6 +18,8 @@ Restart Claude Code. The skills show as `nia-lesson-videos:nia-lesson-videos` an
 If that computer already has `building-lesson-videos` or `nia-lesson-videos` in `~/.claude/skills/`, or has the `lesson-video-tools` plugin installed, remove the duplicate so Claude doesn't see two copies.
 
 To get updates later: `/plugin marketplace update nia-lesson-videos`.
+
+If the repo is made private again, that computer must first be signed in to GitHub as the owner (`gh auth login`).
 
 ## Requirements
 - Windows, with After Effects 2023 or newer open on the lesson project and the NIA template imported.
