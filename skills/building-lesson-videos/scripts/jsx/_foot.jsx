@@ -1,0 +1,1 @@
+for (var i = 1; i <= app.project.numItems; i++) { var it = app.project.item(i); if (it instanceof FootageItem && it.file && /\.(jpg|jpeg|png)$/i.test(it.name) && it.width > 1000) R.done.push(it.id + " " + it.name + " " + it.width + "x" + it.height); }

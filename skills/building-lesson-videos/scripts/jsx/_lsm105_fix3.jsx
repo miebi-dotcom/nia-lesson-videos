@@ -1,0 +1,13 @@
+var c = compByName("S07 Supply-chain native");
+var item = importOnce("D:/Projects 2025/PHASE 11/UNDER GRAD/SHORT/MIVA-LSM105_Y1_01_01/asset/MIVA-LSM105_Y1_01_01_Introduction to Critical Thinking in Logistics and Supply Chain Management/SUBASSETS/Modern_3D_farm_icon_20261014164829-removebg-preview.png", false, folderNamed("LSM105 assets", true));
+var old = null;
+for (var j = 1; j <= c.numLayers; j++) if (c.layer(j).name.substr(0, 3) === "025") old = c.layer(j);
+var nl = c.layers.add(item);
+nl.moveBefore(old);
+nl.name = old.name;
+var t = tg(nl);
+t.property("ADBE Scale").setValue([57, 57, 100]);
+t.property("ADBE Position").setValue([240, 509]);
+nl.startTime = 0; nl.inPoint = 0; nl.outPoint = c.duration;
+old.remove();
+R.done = ["farm icon replaced from SUBASSETS"];

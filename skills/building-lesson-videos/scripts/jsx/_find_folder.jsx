@@ -1,0 +1,1 @@
+for (var i = 1; i <= app.project.numItems; i++) { var it = app.project.item(i); if (it instanceof FolderItem && it.name.indexOf(DATA.name) >= 0) R.done.push(it.id + " " + it.name + " in " + it.parentFolder.name); }

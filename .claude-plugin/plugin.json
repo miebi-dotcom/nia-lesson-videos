@@ -1,0 +1,7 @@
+{
+  "name": "nia-lesson-videos",
+  "description": "Builds, reviews and fixes NIA University tutor lesson videos in Adobe After Effects with the NIA template: script-only on-screen text timed to the narration, rebuilt diagrams with arrows that follow the tutor, varied transitions, and a review against the NIA style. Bundles building-lesson-videos, whose runner and scripts it uses.",
+  "version": "1.0.0",
+  "author": { "name": "miebi-dotcom" },
+  "keywords": ["after-effects", "video", "lesson", "nia", "motion-graphics"]
+}

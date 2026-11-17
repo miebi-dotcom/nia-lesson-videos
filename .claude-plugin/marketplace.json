@@ -1,0 +1,14 @@
+{
+  "name": "nia-lesson-videos",
+  "owner": { "name": "miebi-dotcom" },
+  "metadata": { "description": "Claude Code skills for building NIA University lesson videos in After Effects" },
+  "plugins": [
+    {
+      "name": "nia-lesson-videos",
+      "source": "./",
+      "description": "Builds, reviews and fixes NIA University tutor lesson videos in Adobe After Effects with the NIA template. Includes building-lesson-videos, which it runs on.",
+      "version": "1.0.0",
+      "keywords": ["after-effects", "video", "lesson", "nia", "motion-graphics"]
+    }
+  ]
+}

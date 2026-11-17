@@ -1,0 +1,13 @@
+app.beginUndoGroup("blurposter");
+var c = app.project.itemByID(6478), L = c.layer(9);
+var D = L.duplicate(); D.name = "Poster text blur";
+var m = D.property("ADBE Mask Parade").addProperty("ADBE Mask Atom");
+var sh = new Shape(); var x0 = 1850, x1 = 2080, y0 = 610, y1 = 870;
+sh.vertices = [[x0, y0], [x1, y0], [x1, y1], [x0, y1]]; sh.closed = true;
+m.property("ADBE Mask Shape").setValue(sh);
+m.property("ADBE Mask Feather").setValue([40, 40]);
+var fx = D.property("ADBE Effect Parade").addProperty("ADBE Gaussian Blur 2");
+fx.property("ADBE Gaussian Blur 2-0001").setValue(70);
+fx.property("ADBE Gaussian Blur 2-0003").setValue(true);
+R.done.push("dup index " + D.index + " below? " + c.layer(D.index + 1).name);
+app.endUndoGroup();
